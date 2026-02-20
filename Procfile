@@ -1,1 +1,1 @@
-web: gunicorn multi_disease_web.wsgi
+web: gunicorn multi_disease_web.wsgi:application --bind 0.0.0.0:$PORT
