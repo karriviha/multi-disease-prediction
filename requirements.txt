@@ -2,7 +2,7 @@ asgiref==3.11.1
 Django==5.2.11
 gunicorn==25.1.0
 joblib==1.5.3
-numpy==1.26.0
+numpy>=1.21.0
 packaging==26.0
 pandas==2.3.3
 python-dateutil==2.9.0.post0
