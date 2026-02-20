@@ -14,8 +14,7 @@ from .models import UserProfile
 
 
 # ================= BASE DIRECTORY =================
-PROJECT_ROOT = Path(settings.BASE_DIR).parent
-MODELS_DIR = PROJECT_ROOT / "models"
+MODELS_DIR = Path(settings.BASE_DIR) / "models"
 RESULTS_PATH = MODELS_DIR / "all_results.json"
 
 
