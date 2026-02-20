@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+        <a href="{% url 'dashboard' %}" class="navbar-brand">⬅ Dashboard</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h3 class="mb-4">Model Evaluation Metrics</h3>
+{% if warnings %}
+<div class="alert alert-warning">
+    <ul class="mb-0">
+        {% for w in warnings %}
+        <li>{{ w }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Algorithm</th>
+                <th>Accuracy</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+                <th>Confusion Matrix</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in results %}
+            <tr>
+                <td>{{ r.algorithm }}</td>
+                <td>{{ r.accuracy }}</td>
+                <td>{{ r.precision }}</td>
+                <td>{{ r.recall }}</td>
+                <td>{{ r.f1 }}</td>
+                <td>
+                    <table class="table table-sm table-bordered text-center mb-0">
+                        <tr>
+                            <td>{{ r.cm.0.0 }}</td>
+                            <td>{{ r.cm.0.1 }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ r.cm.1.0 }}</td>
+                            <td>{{ r.cm.1.1 }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
