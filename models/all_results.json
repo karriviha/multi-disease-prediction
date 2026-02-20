@@ -1,0 +1,405 @@
+{
+    "heart": [
+        {
+            "Algorithm": "Logistic Regression",
+            "Accuracy": 80.98,
+            "Precision": 80.94,
+            "Recall": 80.98,
+            "F1": 80.94,
+            "ROC_AUC": 90.18,
+            "Confusion_Matrix": [
+                [
+                    63,
+                    19
+                ],
+                [
+                    16,
+                    86
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Random Forest",
+            "Accuracy": 84.78,
+            "Precision": 84.78,
+            "Recall": 84.78,
+            "F1": 84.78,
+            "ROC_AUC": 91.76,
+            "Confusion_Matrix": [
+                [
+                    68,
+                    14
+                ],
+                [
+                    14,
+                    88
+                ]
+            ]
+        },
+        {
+            "Algorithm": "SVM",
+            "Accuracy": 83.7,
+            "Precision": 83.72,
+            "Recall": 83.7,
+            "F1": 83.62,
+            "ROC_AUC": 90.82,
+            "Confusion_Matrix": [
+                [
+                    64,
+                    18
+                ],
+                [
+                    12,
+                    90
+                ]
+            ]
+        },
+        {
+            "Algorithm": "KNN",
+            "Accuracy": 82.61,
+            "Precision": 83.02,
+            "Recall": 82.61,
+            "F1": 82.66,
+            "ROC_AUC": 88.55,
+            "Confusion_Matrix": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    20,
+                    82
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Decision Tree",
+            "Accuracy": 77.72,
+            "Precision": 77.69,
+            "Recall": 77.72,
+            "F1": 77.59,
+            "ROC_AUC": 77.03,
+            "Confusion_Matrix": [
+                [
+                    58,
+                    24
+                ],
+                [
+                    17,
+                    85
+                ]
+            ]
+        }
+    ],
+    "diabetes": [
+        {
+            "Algorithm": "Logistic Regression",
+            "Accuracy": 71.43,
+            "Precision": 70.65,
+            "Recall": 71.43,
+            "F1": 70.84,
+            "ROC_AUC": 82.3,
+            "Confusion_Matrix": [
+                [
+                    82,
+                    18
+                ],
+                [
+                    26,
+                    28
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Random Forest",
+            "Accuracy": 74.68,
+            "Precision": 74.23,
+            "Recall": 74.68,
+            "F1": 74.37,
+            "ROC_AUC": 81.46,
+            "Confusion_Matrix": [
+                [
+                    83,
+                    17
+                ],
+                [
+                    22,
+                    32
+                ]
+            ]
+        },
+        {
+            "Algorithm": "SVM",
+            "Accuracy": 75.32,
+            "Precision": 74.97,
+            "Recall": 75.32,
+            "F1": 75.09,
+            "ROC_AUC": 79.22,
+            "Confusion_Matrix": [
+                [
+                    83,
+                    17
+                ],
+                [
+                    21,
+                    33
+                ]
+            ]
+        },
+        {
+            "Algorithm": "KNN",
+            "Accuracy": 70.13,
+            "Precision": 69.46,
+            "Recall": 70.13,
+            "F1": 69.69,
+            "ROC_AUC": 74.05,
+            "Confusion_Matrix": [
+                [
+                    80,
+                    20
+                ],
+                [
+                    26,
+                    28
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Decision Tree",
+            "Accuracy": 72.08,
+            "Precision": 71.08,
+            "Recall": 72.08,
+            "F1": 71.02,
+            "ROC_AUC": 66.57,
+            "Confusion_Matrix": [
+                [
+                    85,
+                    15
+                ],
+                [
+                    28,
+                    26
+                ]
+            ]
+        }
+    ],
+    "breast_cancer": [
+        {
+            "Algorithm": "Logistic Regression",
+            "Accuracy": 96.49,
+            "Precision": 96.52,
+            "Recall": 96.49,
+            "F1": 96.47,
+            "ROC_AUC": 99.6,
+            "Confusion_Matrix": [
+                [
+                    71,
+                    1
+                ],
+                [
+                    3,
+                    39
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Random Forest",
+            "Accuracy": 96.49,
+            "Precision": 96.68,
+            "Recall": 96.49,
+            "F1": 96.45,
+            "ROC_AUC": 99.42,
+            "Confusion_Matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    4,
+                    38
+                ]
+            ]
+        },
+        {
+            "Algorithm": "SVM",
+            "Accuracy": 97.37,
+            "Precision": 97.47,
+            "Recall": 97.37,
+            "F1": 97.35,
+            "ROC_AUC": 99.47,
+            "Confusion_Matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    3,
+                    39
+                ]
+            ]
+        },
+        {
+            "Algorithm": "KNN",
+            "Accuracy": 95.61,
+            "Precision": 95.69,
+            "Recall": 95.61,
+            "F1": 95.58,
+            "ROC_AUC": 98.23,
+            "Confusion_Matrix": [
+                [
+                    71,
+                    1
+                ],
+                [
+                    4,
+                    38
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Decision Tree",
+            "Accuracy": 92.98,
+            "Precision": 92.98,
+            "Recall": 92.98,
+            "F1": 92.98,
+            "ROC_AUC": 92.46,
+            "Confusion_Matrix": [
+                [
+                    68,
+                    4
+                ],
+                [
+                    4,
+                    38
+                ]
+            ]
+        }
+    ],
+    "liver": [
+        {
+            "Algorithm": "Logistic Regression",
+            "Accuracy": 57.86,
+            "Precision": 57.59,
+            "Recall": 57.86,
+            "F1": 57.68,
+            "ROC_AUC": 76.23,
+            "Confusion_Matrix": [
+                [
+                    982,
+                    433,
+                    238
+                ],
+                [
+                    508,
+                    797,
+                    383
+                ],
+                [
+                    220,
+                    325,
+                    1114
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Random Forest",
+            "Accuracy": 95.14,
+            "Precision": 95.16,
+            "Recall": 95.14,
+            "F1": 95.14,
+            "ROC_AUC": 99.26,
+            "Confusion_Matrix": [
+                [
+                    1540,
+                    83,
+                    30
+                ],
+                [
+                    49,
+                    1610,
+                    29
+                ],
+                [
+                    16,
+                    36,
+                    1607
+                ]
+            ]
+        },
+        {
+            "Algorithm": "SVM",
+            "Accuracy": 82.56,
+            "Precision": 82.76,
+            "Recall": 82.56,
+            "F1": 82.63,
+            "ROC_AUC": 94.1,
+            "Confusion_Matrix": [
+                [
+                    1337,
+                    246,
+                    70
+                ],
+                [
+                    231,
+                    1370,
+                    87
+                ],
+                [
+                    87,
+                    151,
+                    1421
+                ]
+            ]
+        },
+        {
+            "Algorithm": "KNN",
+            "Accuracy": 88.54,
+            "Precision": 88.59,
+            "Recall": 88.54,
+            "F1": 88.56,
+            "ROC_AUC": 96.25,
+            "Confusion_Matrix": [
+                [
+                    1469,
+                    125,
+                    59
+                ],
+                [
+                    147,
+                    1474,
+                    67
+                ],
+                [
+                    62,
+                    113,
+                    1484
+                ]
+            ]
+        },
+        {
+            "Algorithm": "Decision Tree",
+            "Accuracy": 91.2,
+            "Precision": 91.21,
+            "Recall": 91.2,
+            "F1": 91.2,
+            "ROC_AUC": 93.61,
+            "Confusion_Matrix": [
+                [
+                    1487,
+                    111,
+                    55
+                ],
+                [
+                    98,
+                    1535,
+                    55
+                ],
+                [
+                    51,
+                    70,
+                    1538
+                ]
+            ]
+        }
+    ]
+}
