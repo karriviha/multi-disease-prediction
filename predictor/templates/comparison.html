@@ -26,26 +26,30 @@
     {% for item in results %}
         <div class="card shadow mb-5">
 
-            <!-- Disease Header -->
             <div class="card-header bg-dark text-white">
                 <h4 class="mb-0">{{ item.name }}</h4>
             </div>
 
             <div class="card-body">
 
-                <!-- Professional Best Model Line -->
-                <p class="mb-4">
-                    <strong>Best Performing Model (Based on F1-Score):</strong>
-                    {{ item.best_model }}
-                </p>
+                <!-- OVERALL BEST -->
+                <div class="alert alert-success text-center fw-bold">
+                    Overall Best Model (Based on F1-Score):
+                    {{ item.overall_best }}
+                    <br>
+                    <small>Selected From: {{ item.overall_best_smote }}</small>
+                </div>
 
-                <!-- Detailed Table -->
+                <!-- WITHOUT SMOTE -->
+                <h5 class="mt-4 mb-3 text-primary">Without SMOTE</h5>
+
                 <div class="table-responsive">
-                    <table class="table table-bordered text-center align-middle">
+                    <table class="table table-bordered table-hover text-center align-middle">
                         <thead class="table-dark">
                             <tr>
                                 <th>Algorithm</th>
                                 <th>Accuracy (%)</th>
+                                <th>Std (%)</th>
                                 <th>Precision (%)</th>
                                 <th>Recall (%)</th>
                                 <th>F1 Score (%)</th>
@@ -54,16 +58,51 @@
                         </thead>
                         <tbody>
                             {% for model in item.models %}
-                                <tr>
-                                    <td class="{% if model.Algorithm == item.best_model %}fw-bold text-primary{% endif %}">
-                                        {{ model.Algorithm }}
-                                    </td>
-                                    <td>{{ model.Accuracy }}</td>
-                                    <td>{{ model.Precision }}</td>
-                                    <td>{{ model.Recall }}</td>
-                                    <td>{{ model.F1 }}</td>
-                                    <td>{{ model.ROC_AUC }}</td>
+                                {% if model.SMOTE == "Without_SMOTE" %}
+                                <tr class="{% if model.Algorithm == item.best_without %}table-success fw-bold{% endif %}">
+                                    <td>{{ model.Algorithm }}</td>
+                                    <td>{{ model.Accuracy_mean }}</td>
+                                    <td>{{ model.Accuracy_std }}</td>
+                                    <td>{{ model.Precision_mean }}</td>
+                                    <td>{{ model.Recall_mean }}</td>
+                                    <td>{{ model.F1_mean }}</td>
+                                    <td>{{ model.ROC_AUC_mean }}</td>
                                 </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- WITH SMOTE -->
+                <h5 class="mt-5 mb-3 text-warning">With SMOTE</h5>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover text-center align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Algorithm</th>
+                                <th>Accuracy (%)</th>
+                                <th>Std (%)</th>
+                                <th>Precision (%)</th>
+                                <th>Recall (%)</th>
+                                <th>F1 Score (%)</th>
+                                <th>ROC-AUC (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for model in item.models %}
+                                {% if model.SMOTE == "With_SMOTE" %}
+                                <tr class="{% if model.Algorithm == item.best_with %}table-success fw-bold{% endif %}">
+                                    <td>{{ model.Algorithm }}</td>
+                                    <td>{{ model.Accuracy_mean }}</td>
+                                    <td>{{ model.Accuracy_std }}</td>
+                                    <td>{{ model.Precision_mean }}</td>
+                                    <td>{{ model.Recall_mean }}</td>
+                                    <td>{{ model.F1_mean }}</td>
+                                    <td>{{ model.ROC_AUC_mean }}</td>
+                                </tr>
+                                {% endif %}
                             {% endfor %}
                         </tbody>
                     </table>
