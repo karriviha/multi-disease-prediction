@@ -3,140 +3,130 @@
         "With_SMOTE": [
             {
                 "Algorithm": "Logistic Regression",
-                "Accuracy_mean": 79.46,
-                "Accuracy_std": 3.35,
-                "Precision_mean": 79.83,
-                "Recall_mean": 79.46,
-                "F1_mean": 79.48,
-                "ROC_AUC_mean": 86.94
+                "Accuracy_mean": 80.22,
+                "Accuracy_std": 3.63,
+                "Precision_mean": 80.6,
+                "Recall_mean": 80.22,
+                "F1_mean": 80.24,
+                "ROC_AUC_mean": 87.69
             },
             {
                 "Algorithm": "Random Forest",
-                "Accuracy_mean": 79.78,
-                "Accuracy_std": 3.71,
-                "Precision_mean": 79.99,
-                "Recall_mean": 79.78,
-                "F1_mean": 79.72,
-                "ROC_AUC_mean": 88.08
+                "Accuracy_mean": 80.11,
+                "Accuracy_std": 3.98,
+                "Precision_mean": 80.24,
+                "Recall_mean": 80.11,
+                "F1_mean": 80.04,
+                "ROC_AUC_mean": 88.11
             },
             {
                 "Algorithm": "SVM",
                 "Accuracy_mean": 81.63,
-                "Accuracy_std": 3.72,
-                "Precision_mean": 81.69,
+                "Accuracy_std": 3.52,
+                "Precision_mean": 81.73,
                 "Recall_mean": 81.63,
-                "F1_mean": 81.58,
-                "ROC_AUC_mean": 88.63
+                "F1_mean": 81.6,
+                "ROC_AUC_mean": 88.58
             },
             {
                 "Algorithm": "KNN",
-                "Accuracy_mean": 79.24,
-                "Accuracy_std": 4.44,
-                "Precision_mean": 79.59,
-                "Recall_mean": 79.24,
-                "F1_mean": 79.29,
-                "ROC_AUC_mean": 86.28
+                "Accuracy_mean": 78.7,
+                "Accuracy_std": 3.83,
+                "Precision_mean": 79.12,
+                "Recall_mean": 78.7,
+                "F1_mean": 78.74,
+                "ROC_AUC_mean": 86.08
             },
             {
                 "Algorithm": "Decision Tree",
-                "Accuracy_mean": 74.46,
-                "Accuracy_std": 4.89,
-                "Precision_mean": 74.94,
-                "Recall_mean": 74.46,
-                "F1_mean": 74.42,
-                "ROC_AUC_mean": 75.34
+                "Accuracy_mean": 75.22,
+                "Accuracy_std": 4.06,
+                "Precision_mean": 76.31,
+                "Recall_mean": 75.22,
+                "F1_mean": 75.22,
+                "ROC_AUC_mean": 81.42
             },
             {
                 "Algorithm": "XGBoost",
-                "Accuracy_mean": 80.98,
-                "Accuracy_std": 2.76,
-                "Precision_mean": 81.18,
-                "Recall_mean": 80.98,
-                "F1_mean": 80.95,
-                "ROC_AUC_mean": 88.39
+                "Accuracy_mean": 80.54,
+                "Accuracy_std": 3.62,
+                "Precision_mean": 80.69,
+                "Recall_mean": 80.54,
+                "F1_mean": 80.52,
+                "ROC_AUC_mean": 87.46
             }
         ],
         "Without_SMOTE": [
             {
                 "Algorithm": "Logistic Regression",
-                "Accuracy_mean": 79.89,
-                "Accuracy_std": 2.67,
-                "Precision_mean": 79.96,
-                "Recall_mean": 79.89,
-                "F1_mean": 79.85,
-                "ROC_AUC_mean": 87.38
+                "Accuracy_mean": 80.87,
+                "Accuracy_std": 3.48,
+                "Precision_mean": 81.02,
+                "Recall_mean": 80.87,
+                "F1_mean": 80.83,
+                "ROC_AUC_mean": 87.95
             },
             {
                 "Algorithm": "Random Forest",
-                "Accuracy_mean": 80.98,
-                "Accuracy_std": 3.71,
-                "Precision_mean": 81.16,
-                "Recall_mean": 80.98,
-                "F1_mean": 80.87,
-                "ROC_AUC_mean": 87.85
+                "Accuracy_mean": 79.78,
+                "Accuracy_std": 4.51,
+                "Precision_mean": 79.95,
+                "Recall_mean": 79.78,
+                "F1_mean": 79.67,
+                "ROC_AUC_mean": 87.78
             },
             {
                 "Algorithm": "SVM",
-                "Accuracy_mean": 80.87,
-                "Accuracy_std": 3.48,
-                "Precision_mean": 81.05,
-                "Recall_mean": 80.87,
-                "F1_mean": 80.76,
-                "ROC_AUC_mean": 88.01
+                "Accuracy_mean": 82.39,
+                "Accuracy_std": 3.03,
+                "Precision_mean": 82.52,
+                "Recall_mean": 82.39,
+                "F1_mean": 82.29,
+                "ROC_AUC_mean": 88.36
             },
             {
                 "Algorithm": "KNN",
-                "Accuracy_mean": 80.98,
-                "Accuracy_std": 3.55,
-                "Precision_mean": 81.08,
-                "Recall_mean": 80.98,
-                "F1_mean": 80.98,
-                "ROC_AUC_mean": 87.79
+                "Accuracy_mean": 80.33,
+                "Accuracy_std": 3.93,
+                "Precision_mean": 80.44,
+                "Recall_mean": 80.33,
+                "F1_mean": 80.32,
+                "ROC_AUC_mean": 87.71
             },
             {
                 "Algorithm": "Decision Tree",
-                "Accuracy_mean": 76.41,
-                "Accuracy_std": 4.64,
-                "Precision_mean": 77.01,
-                "Recall_mean": 76.41,
-                "F1_mean": 76.39,
-                "ROC_AUC_mean": 81.04
+                "Accuracy_mean": 77.17,
+                "Accuracy_std": 5.1,
+                "Precision_mean": 77.87,
+                "Recall_mean": 77.17,
+                "F1_mean": 77.09,
+                "ROC_AUC_mean": 83.0
             },
             {
                 "Algorithm": "XGBoost",
-                "Accuracy_mean": 80.33,
-                "Accuracy_std": 3.17,
-                "Precision_mean": 80.48,
-                "Recall_mean": 80.33,
-                "F1_mean": 80.23,
-                "ROC_AUC_mean": 87.85
+                "Accuracy_mean": 81.74,
+                "Accuracy_std": 2.99,
+                "Precision_mean": 81.91,
+                "Recall_mean": 81.74,
+                "F1_mean": 81.69,
+                "ROC_AUC_mean": 88.72
             }
         ],
         "Best_Model_Details": {
             "Algorithm": "SVC",
-            "SMOTE": "With_SMOTE",
-            "F1_mean": 81.58,
+            "SMOTE": "Without_SMOTE",
+            "F1_mean": 82.29,
             "Confusion_Matrix": [
                 [
-                    322,
-                    89
+                    309,
+                    102
                 ],
                 [
-                    76,
-                    433
+                    71,
+                    438
                 ]
             ]
-        },
-        "confusion_matrix": [
-            [
-                322,
-                89
-            ],
-            [
-                77,
-                432
-            ]
-        ]
+        }
     },
     "diabetes": {
         "With_SMOTE": [
@@ -265,17 +255,7 @@
                     156
                 ]
             ]
-        },
-        "confusion_matrix": [
-            [
-                441,
-                59
-            ],
-            [
-                112,
-                156
-            ]
-        ]
+        }
     },
     "breast_cancer": {
         "With_SMOTE": [
@@ -404,17 +384,7 @@
                     197
                 ]
             ]
-        },
-        "confusion_matrix": [
-            [
-                346,
-                11
-            ],
-            [
-                15,
-                197
-            ]
-        ]
+        }
     },
     "liver": {
         "With_SMOTE": [
@@ -550,23 +520,6 @@
                     7907
                 ]
             ]
-        },
-        "confusion_matrix": [
-            [
-                7692,
-                386,
-                187
-            ],
-            [
-                383,
-                7818,
-                240
-            ],
-            [
-                146,
-                241,
-                7907
-            ]
-        ]
+        }
     }
 }
