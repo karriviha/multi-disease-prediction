@@ -112,7 +112,8 @@ def best_summary(request):
 
             best = max(all_models, key=lambda x: x.get("F1_mean", 0))
 
-            conf_matrix = ablation_data.get("confusion_matrix", [])
+            best_details = ablation_data.get("Best_Model_Details", {})
+            conf_matrix = best_details.get("Confusion_Matrix", [])
 
             best_models.append({
                 "disease": disease_key.replace("_", " ").title(),
